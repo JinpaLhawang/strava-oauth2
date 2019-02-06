@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: strava-oauth2
+  main:
+    allow-bean-definition-overriding: true # TODO: Find how to remove this
+
+server:
+  port: 8080
+
+security:
+  oauth2:
+    client:
+      # For client id and secret, refer to:
+      # https://www.strava.com/settings/api
+      # Instead of setting here, see README.md to set as command line arguments
+      client-id: #SECRET, DO NOT COMMIT TO REPOSITORY
+      client-secret: #SECRET, DO NOT COMMIT TO REPOSITORY
+      access-token-uri: https://www.strava.com/oauth/token
+      user-authorization-uri: https://www.strava.com/oauth/authorize
+      scope: view_private
+      token-name: access_token
+      authentication-scheme: query
+      client-authentication-scheme: form
+    resource:
+      user-info-uri: https://www.strava.com/api/v3/athlete
