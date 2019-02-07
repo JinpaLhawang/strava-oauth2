@@ -27,7 +27,7 @@
 
     <h1>Strava</h1>
 
-    Logged in as: <span id="user"></span>
+    Logged in with access token: <span id="user"></span>
 
     <div>
       <button onClick="logout()" class="btn btn-primary">Logout</button>
@@ -59,7 +59,7 @@
 
     $.get("/user", function(data) {
 
-      $("#user").html(data.name);
+      $("#user").html(data.accessToken);
       $(".unauthenticated").hide();
       $(".authenticated").show();
     });

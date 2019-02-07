@@ -2,7 +2,7 @@
 
 # Configuration
 
-Navigate to [Stava My API Application](https://www.strava.com/settings/api). If required, create a new application to receive a Client ID and Secret. Use those in the run command below.
+Navigate to [Strava My API Application](https://www.strava.com/settings/api). If required, create a new application to receive a Client ID and Secret. Use those in the run command below.
 
 ## Build and Run
 
@@ -12,12 +12,15 @@ Navigate to [Stava My API Application](https://www.strava.com/settings/api). If 
 
 ```
 
-1. Navigate to http://localhost:8080
-1. Log in with Strava and Allow OAuth2
-1. Once logged in:
-  * Navigate to [Authentication Principal](http://localhost:8080/principal)
-  * Navigate to [Subset of Principal](http://localhost:8080/user)
-  * Navigate to [Sample Strava API Request with Access Token included in Header](http://localhost:8080/test)
+1. Navigate to [http://localhost:8091/login](http://localhost:8091/login) and you should be redirected to Strava
+1. If needed, log in to Strava
+1. Authorize the application with Strava
+1. Once redirected back:
+  * You should see your access token and a Logout button
+  * Check the Developer Tools Network tab to see what else is in the /user XHR endpoint
+  * Navigate to [Authentication Principal](http://localhost:8091/principal) to see the authentication details
+  * Navigate to [Sample Strava API Athlete Clubs Request with Access Token included in Header](http://localhost:8091/athlete/clubs)
+  * Navigate to [Sample Strava API Athlete Activities Request with Access Token included in Header](http://localhost:8091/athlete/activities)
 
 ## References
 
