@@ -57,7 +57,7 @@
       }
     });
 
-    $.get("/user", function(data) {
+    $.get("/athleteToken", function(data) {
 
       $("#user").html(data.accessToken);
       $(".unauthenticated").hide();
