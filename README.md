@@ -8,7 +8,7 @@ Navigate to [Strava My API Application](https://www.strava.com/settings/api). If
 
 ```
 ./mvnw clean verify
-./mvnw spring-boot:run -Dspring-boot.run.arguments=--security.oauth2.client.client-id=REPLACE_ME,--security.oauth2.client.client-secret=REPLACE_ME
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--security.oauth2.client.client-id=CLIENT_ID_REPLACE_ME,--security.oauth2.client.client-secret=CLIENT_SECRET_REPLACE_ME
 
 ```
 
