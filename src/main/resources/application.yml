@@ -1,6 +1,8 @@
 spring:
   application:
     name: strava-oauth2
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
   main:
     allow-bean-definition-overriding: true # TODO: Find how to remove this
 
